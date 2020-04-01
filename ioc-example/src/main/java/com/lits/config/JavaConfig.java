@@ -1,6 +1,6 @@
-package com.config;
+package com.lits.config;
 
-import com.model.User;
+import com.lits.model.User;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.*;
 

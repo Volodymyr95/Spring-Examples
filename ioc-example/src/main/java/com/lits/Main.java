@@ -1,5 +1,7 @@
-import com.config.JavaConfig;
-import com.model.Customer;
+package com.lits;
+
+import com.lits.config.JavaConfig;
+import com.lits.model.Customer;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

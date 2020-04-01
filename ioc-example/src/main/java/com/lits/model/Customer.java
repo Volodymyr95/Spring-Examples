@@ -1,4 +1,4 @@
-package com.model;
+package com.lits.model;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
