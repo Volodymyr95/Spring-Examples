@@ -1,8 +1,10 @@
 package com.lits.config;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
@@ -12,22 +14,34 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 import java.util.Properties;
 
 @Configuration
 @ComponentScan("com.lits")
 @EnableTransactionManagement
+@PropertySource("application.properties")
 public class JavaConfig {
+
+    @Value("${db.driverClassName}")
+    private String driverClassName;
+
+    @Value("${db.username}")
+    private String username;
+
+    @Value("${db.password}")
+    private String password;
+
+    @Value("${db.url}")
+    private String url;
 
     @Bean
     public DataSource dataSource() {
         var dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUsername("root");
-        dataSource.setPassword("root");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/myDb?createDatabaseIfNotExist=true");
+        dataSource.setDriverClassName(driverClassName);
+        dataSource.setUsername(username);
+        dataSource.setPassword(password);
+        dataSource.setUrl(url);
         return dataSource;
     }
 
