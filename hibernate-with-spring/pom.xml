@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>hibernate-example</artifactId>
+    <artifactId>hibernate-with-spring</artifactId>
 
     <dependencies>
         <dependency>
