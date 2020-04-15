@@ -1,8 +1,8 @@
 package com.lits;
 
 import com.lits.config.JavaConfig;
-import com.lits.models.User;
-import com.lits.service.UserService;
+import com.lits.entity.Teacher;
+import com.lits.service.TeacherService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class SpringHibernateMain {
@@ -10,8 +10,8 @@ public class SpringHibernateMain {
     public static void main(String[] args) {
         var context = new AnnotationConfigApplicationContext(JavaConfig.class);
 
-        var userService = context.getBean(UserService.class);
-        userService.addUser(new User("user"));
+        var teacherService = context.getBean(TeacherService.class);
+        teacherService.create(new Teacher("John","Doe"));
     }
 
 }
