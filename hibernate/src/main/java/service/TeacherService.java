@@ -1,7 +1,7 @@
 package service;
 
 import config.HibernateUtil;
-import entity.Teacher;
+import com.lits.entity.Teacher;
 import org.hibernate.Session;
 
 import java.util.List;

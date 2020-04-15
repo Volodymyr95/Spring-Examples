@@ -5,7 +5,7 @@ import com.lits.models.User;
 import com.lits.service.UserService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class Main {
+public class SpringHibernateMain {
 
     public static void main(String[] args) {
         var context = new AnnotationConfigApplicationContext(JavaConfig.class);

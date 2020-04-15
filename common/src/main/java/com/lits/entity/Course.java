@@ -1,4 +1,4 @@
-package entity;
+package com.lits.entity;
 
 import javax.persistence.*;
 
@@ -10,7 +10,7 @@ public class Course {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
+    private String courseName;
 
     @ManyToOne
     @JoinColumn(name = "teacher_id", nullable = true)

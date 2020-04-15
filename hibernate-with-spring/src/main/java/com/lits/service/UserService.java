@@ -17,6 +17,7 @@ public class UserService {
     private SessionFactory sessionFactory;
 
 
+    @Transactional
     public void addUser(User user) {
         getCurrentSession().persist(user);
     }

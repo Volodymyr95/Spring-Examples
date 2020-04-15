@@ -1,7 +1,7 @@
 package config;
 
-import entity.Course;
-import entity.Teacher;
+import com.lits.entity.Course;
+import com.lits.entity.Teacher;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;

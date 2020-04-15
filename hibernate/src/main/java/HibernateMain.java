@@ -1,7 +1,7 @@
-import entity.Teacher;
+import com.lits.entity.Teacher;
 import service.TeacherService;
 
-public class Main {
+public class HibernateMain {
     public static void main(String[] args) {
         TeacherService teacherService = new TeacherService();
 
