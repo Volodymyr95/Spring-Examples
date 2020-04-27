@@ -2,17 +2,13 @@ package com.lits.dto;
 
 public class TeacherDto {
 
-    private Long id;
     private String firstName;
+
     private String lastName;
 
-    public Long getId() {
-        return id;
-    }
+    private String email;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public TeacherDto() {}
 
     public String getFirstName() {
         return firstName;
@@ -28,5 +24,13 @@ public class TeacherDto {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

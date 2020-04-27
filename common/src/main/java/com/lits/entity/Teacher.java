@@ -17,6 +17,8 @@ public class Teacher {
     @Column(name = "last_name")
     private String lastName;
 
+    private String email;
+
     @OneToMany(mappedBy="teacher")
     private List<Course> courses;
 
@@ -45,6 +47,14 @@ public class Teacher {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public List<Course> getCourses() {
