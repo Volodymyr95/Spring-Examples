@@ -22,7 +22,9 @@
         <module>spring-rest</module>
         <module>spring-boot-exampl</module>
         <module>spring-data</module>
-        <module>spring-rest-ext</module>
+        <module>spring-swagger-rest</module>
+        <module>spring-webflux</module>
+        <module>spring-security</module>
     </modules>
 
     <dependencies>

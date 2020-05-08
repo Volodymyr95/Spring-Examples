@@ -1,6 +1,6 @@
 package service;
 
-import config.HibernateUtil;
+import com.lits.config.HibernateUtil;
 import com.lits.entity.Teacher;
 import org.hibernate.Session;
 

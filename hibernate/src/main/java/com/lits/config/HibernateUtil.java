@@ -1,4 +1,4 @@
-package config;
+package com.lits.config;
 
 import com.lits.entity.Course;
 import com.lits.entity.Teacher;

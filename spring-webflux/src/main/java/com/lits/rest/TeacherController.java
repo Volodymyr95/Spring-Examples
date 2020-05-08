@@ -2,8 +2,6 @@ package com.lits.rest;
 
 import com.lits.dto.TeacherDto;
 import com.lits.service.TeacherService;
-import lombok.extern.java.Log;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.annotation.Validated;
@@ -13,7 +11,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/teachers")
-@Log
 public class TeacherController {
 
     @Autowired
